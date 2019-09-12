@@ -4,7 +4,7 @@ docker service create \
   --publish 80:80 \
   --detach=true \
   --network jupyterhub \
-  --mount type=bind,src=/hosthome/administrator/Documents/docker/templates/docker-jupyterhub-nginx/deploy-jupyterhub-dockerswarm/nginx.conf,dst=/etc/nginx/conf.d/default.conf \
+  --mount type=bind,src=hosthome/administrator/Documents/docker/templates/docker-jupyterhub-nginx/deploy-jupyterhub-dockerswarm/nginx.conf,dst=/etc/nginx/conf.d/default.conf \
   nginx
 
 
