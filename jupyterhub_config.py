@@ -37,12 +37,12 @@ mounts = [{'type': 'volume',
         },
 }]
 
-c.SwarmSpawner.container_spec = {[]
-#    # The command to run inside the service
-#    'args': ['/usr/local/bin/start-singleuser.sh'],  # (string or list)
-#    'Image': 'jupyter/datascience-notebook:latest',
-#    # Replace mounts with [] to disable permanent storage
-#    'mounts': mounts
+c.SwarmSpawner.container_spec = {
+    # The command to run inside the service
+    'args': ['/usr/local/bin/start-singleuser.sh'],  # (string or list)
+    'Image': 'jupyter/datascience-notebook:latest',
+    # Replace mounts with [] to disable permanent storage
+    'mounts': []    #mounts
 }
 
 c.SwarmSpawner.resource_spec = {
