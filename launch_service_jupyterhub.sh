@@ -6,4 +6,4 @@ docker service create \
   --network jupyterhub \
   --constraint 'node.role == manager' \
   --detach=true \
-  yourusername/jupyterhub-docker:latest
+  jhenck57/arc_gis:jupyterhub-docker

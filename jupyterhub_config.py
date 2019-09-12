@@ -13,7 +13,7 @@ c.JupyterHub.ip = '0.0.0.0'
 ## The ip for this process
 c.JupyterHub.hub_ip = '0.0.0.0'
 #  Defaults to an empty set, in which case no user has admin access.
-c.GoogleOAuthenticator.admin_users = {"youremail@gmail.com"}
+c.GoogleOAuthenticator.admin_users = {"jhenck57@scarletmail.rutgers.edu"}
 
 c.JupyterHub.spawner_class = 'cassinyspawner.SwarmSpawner'
 c.SwarmSpawner.jupyterhub_service_name = "jupyterhubserver"
