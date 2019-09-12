@@ -1,11 +1,11 @@
 import os
 
-from oauthenticator.google import GoogleOAuthenticator
-c.JupyterHub.authenticator_class = GoogleOAuthenticator
-c.GoogleOAuthenticator.oauth_callback_url = 'http://server_url.com/hub/oauth_callback'
-c.GoogleOAuthenticator.client_id = ''
-c.GoogleOAuthenticator.client_secret = ''
-
+#from oauthenticator.google import GoogleOAuthenticator
+#c.JupyterHub.authenticator_class = GoogleOAuthenticator
+#c.GoogleOAuthenticator.oauth_callback_url = 'http://server_url.com/hub/oauth_callback'
+#c.GoogleOAuthenticator.client_id = ''
+#c.GoogleOAuthenticator.client_secret = ''
+c.JupyterHub.authenticator_class = 'jupyterhub.auth.LocalAuthenticator'
 ## The public facing port of the proxy
 c.JupyterHub.port = 8000
 ## The public facing ip of the whole application (the proxy)
