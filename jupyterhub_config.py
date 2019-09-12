@@ -5,7 +5,9 @@ import os
 #c.GoogleOAuthenticator.oauth_callback_url = 'http://server_url.com/hub/oauth_callback'
 #c.GoogleOAuthenticator.client_id = ''
 #c.GoogleOAuthenticator.client_secret = ''
-c.JupyterHub.authenticator_class = 'jupyterhub.auth.LocalAuthenticator'
+c.JupyterHub.authenticator_class = 'jupyterhub.auth.PAMAuthenticator'
+
+#jupyterhub.auth.LocalAuthenticator
 #c.DummyAuthenticator.password = "admin"
 ## The public facing port of the proxy
 c.JupyterHub.port = 8000
