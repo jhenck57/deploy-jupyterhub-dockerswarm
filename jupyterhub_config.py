@@ -18,7 +18,12 @@ c.JupyterHub.port = 8000
 ## The public facing ip of the whole application (the proxy)
 c.JupyterHub.ip = '0.0.0.0'
 ## The ip for this process
-c.JupyterHub.hub_ip = '0.0.0.0'
+#c.JupyterHub.hub_ip = '0.0.0.0'
+c.JupyterHub.hub_ip = '192.168.99.108'
+#c.JupyterHub.hub_ip = '10.0.1.11'
+#c.jupyterhub.hub_ip = '10.0.1.8'
+#c.JupyterHub.hub_ip = ''
+#c.JupyterHub.hub_ip = '172.18.1.0'
 ##  Defaults to an empty set, in which case no user has admin access.
 #c.GoogleOAuthenticator.admin_users = {"jhenck57@scarletmail.rutgers.edu"}
 
