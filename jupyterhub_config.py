@@ -6,7 +6,10 @@ import os
 #c.GoogleOAuthenticator.client_id = ''
 #c.GoogleOAuthenticator.client_secret = ''
 c.JupyterHub.authenticator_class = 'jupyterhub.auth.PAMAuthenticator'
-
+c.Authenticator.whitelist = {'admin', 'jhenck57'}
+c.Authenticator.admin_users = {'admin', 'jhenck57'}
+c.PAMAuthenticator.admin_groups = {'pimps'}
+c.LocalAuthenticator.create_system_users = True
 #jupyterhub.auth.LocalAuthenticator
 #c.DummyAuthenticator.password = "admin"
 ## The public facing port of the proxy
