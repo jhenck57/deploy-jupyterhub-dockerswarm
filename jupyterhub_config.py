@@ -19,7 +19,7 @@ c.JupyterHub.port = 8000
 c.JupyterHub.ip = '0.0.0.0'
 ## The ip for this process
 #c.JupyterHub.hub_ip = '0.0.0.0'
-c.JupyterHub.hub_ip = '192.168.99.108'
+c.JupyterHub.hub_ip = '192.168.99.100'
 #c.JupyterHub.hub_ip = '10.0.1.11'
 #c.jupyterhub.hub_ip = '10.0.1.8'
 #c.JupyterHub.hub_ip = ''
